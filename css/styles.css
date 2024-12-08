@@ -1,0 +1,332 @@
+/* #region general */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --logo-color: #4d5ae5;
+  --nav-color: #2e2f42;
+  --green: #31d0aa;
+  --help-color: #8e8f99;
+  --accent-color: #e7e9fc;
+  --cloud-color: #f4f4fd;
+  --white: #ffffff;
+  --studio-color: #404bbf;
+  --body-color: #434455;
+  --medium: 500;
+  --regular: 400;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--body-color);
+  background-color: var(--white);
+}
+
+header {
+  border-bottom: 1px solid var(--accent-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+}
+
+h1 {
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+}
+
+h2 {
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: var(--nav-color);
+  text-transform: capitalize;
+}
+
+h3 {
+  font-weight: var(--medium); /*medium*/
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--nav-color);
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-style: normal;
+}
+
+p {
+  font-weight: var(--regular); /*regular*/
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.button {
+  font-weight: var(--medium); /*medium*/
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+}
+/* #endregion general */
+
+/* #region header */
+
+.navigation {
+  color: var(--nav-color);
+  font-weight: var(--medium); /*medium*/
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.navigation .container {
+  display: flex;
+  align-items: center;
+}
+
+.nav-block {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  text-transform: uppercase;
+  color: var(--logo-color);
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  font-weight: bold;
+  font-family: 'Raleway', sans-serif;
+  margin-right: auto;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 40px;
+}
+
+.nav-items {
+  padding: 24px 0;
+}
+
+.nav-items:hover,
+.contacts:hover,
+.contacts:active {
+  color: var(--studio-color);
+}
+
+.nav-items:active {
+  text-decoration: underline;
+}
+
+.a-nav {
+  padding: 24px 0;
+}
+
+.a-nav:focus,
+.a-adress:focus {
+  color: var(--studio-color);
+}
+
+.logo-studio {
+  color: var(--nav-color);
+  letter-spacing: 0.03em;
+}
+.navigation-address {
+  font-weight: var(--regular); /*regular*/
+  font-style: normal;
+}
+
+.address-menu {
+  display: flex;
+  gap: 40px;
+}
+
+.contacts {
+  color: var(--body-color);
+}
+
+/* #endregion header */
+
+/* #region title-section */
+.title-section {
+  background-color: var(--nav-color);
+  color: var(--white);
+  text-align: center;
+  padding: 188px 0;
+  background-image: url("./images/people-office 1.jpg");
+	background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto auto;
+}
+
+.container .title-text {
+  max-width: 496px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title-section .button {
+  background-color: var(--logo-color);
+  color: var(--white);
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  border-radius: 4px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 48px;
+}
+
+.title-section .button:hover,
+.title-section .button:focus {
+  background-color: var(--studio-color);
+  color: var(--white);
+}
+
+/* #endregion title-section */
+
+/* #region benefits-section */
+.section-benefits {
+  padding: 120px 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+  overflow: hidden;
+}
+
+.menu-benefits {
+  display: flex;
+  gap: 24px;
+}
+
+.items-benefits {
+  width: calc((100% - 3*24px)/4);
+}
+
+.third-title-text {
+  margin-bottom: 8px;
+}
+/* #endregion benefits-section */
+
+/* #region members-section */
+.section-our-team {
+  background-color: var(--cloud-color);
+  padding: 120px 0;
+}
+
+.second-title-text {
+  margin-bottom: 72px;
+}
+
+.ul-team {
+  text-align: center;
+  display: flex;
+  gap: 24px;
+}
+
+.li-membres {
+  background-color: var(--white);
+  width: calc((100%-24px*3)/4);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.describe-img {
+  padding: 32px 0;
+}
+.p-text {
+  font-size: 16px;
+}
+/* #endregion members-section */
+
+/* #region our-portfolio-section */
+.section-our-portfolio {
+  padding: 120px 0;
+}
+
+.potfolio-menu {
+  display: flex;
+  column-gap: 24px;
+  flex-wrap: wrap;
+  row-gap: 48px;
+}
+
+.portfolio-items {
+  width: calc((100% - 48px) / 3);
+}
+
+.describe-portf-img {
+  padding: 32px 16px;
+  border: 1px solid var(--accent-color);
+  border-top: none;
+}
+/* #endregion our-portfolio-section */
+
+/* #region footer */
+
+.footer {
+  background-color: var(--nav-color);
+  color: var(--cloud-color);
+  padding: 100px 0;
+}
+
+.footer .logo-studio {
+  color: var(--cloud-color);
+}
+
+.footer .logo {
+  display: inline-block;
+  margin-bottom: 16px;
+}
+.p-footer {
+  max-width: 264px;
+}
+
+/* #endregion footer */
